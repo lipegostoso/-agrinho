@@ -1,0 +1,154 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo & Cidade</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1500595046743-ee4142da0985?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .section-bg {
+            background-color: #f8fafc;
+        }
+        .gallery-img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="bg-green-800 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Campo & Cidade</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-green-300">Início</a></li>
+                <li><a href="#sobre" class="hover:text-green-300">Sobre</a></li>
+                <li><a href="#galeria" class="hover:text-green-300">Galeria</a></li>
+                <li><a href="#atividades" class="hover:text-green-300">Atividades</a></li>
+                <li><a href="#contato" class="hover:text-green-300">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div>
+            <h2 class="text-5xl font-bold mb-4">Bem-vindo ao Campo & Cidade</h2>
+            <p class="text-xl mb-6">Descubra a harmonia entre a tranquilidade rural e a energia urbana.</p>
+            <a href="#sobre" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-16 section-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Sobre o Campo & Cidade</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Vida Rural</h3>
+                    <p class="text-gray-700">A vida no campo oferece paz, conexão com a natureza e um ritmo mais lento. Explore fazendas, trilhas e a beleza das paisagens rurais, onde o ar fresco e a simplicidade reinam.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Vida Urbana</h3>
+                    <p class="text-gray-700">A cidade pulsa com energia, cultura e inovação. Museus, restaurantes, eventos e uma vida dinâmica aguardam aqueles que buscam experiências vibrantes e modernas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section id="galeria" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Galeria</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Campo" class="w-full h-64 object-cover rounded-lg gallery-img">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cidade" class="w-full h-64 object-cover rounded-lg gallery-img">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Natureza" class="w-full h-64 object-cover rounded-lg gallery-img">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Por do sol" class="w-full h-64 object-cover rounded-lg gallery-img">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cidade à noite" class="w-full h-64 object-cover rounded-lg gallery-img">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Paisagem rural" class="w-full h-64 object-cover rounded-lg gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Atividades Section -->
+    <section id="atividades" class="py-16 section-bg parallax" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="container mx-auto px-4 text-white">
+            <h2 class="text-4xl font-bold text-center mb-12">Atividades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Trilhas no Campo</h3>
+                    <p class="text-gray-700">Explore trilhas cênicas, respire ar puro e descubra a fauna e flora local em caminhadas guiadas ou independentes.</p>
+                </div>
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Eventos Culturais</h3>
+                    <p class="text-gray-700">Participe de festivais, exposições e shows que celebram a diversidade cultural das cidades.</p>
+                </div>
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Gastronomia</h3>
+                    <p class="text-gray-700">Desfrute de pratos típicos do campo e da cidade, desde comida caseira até alta gastronomia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Entre em Contato</h2>
+            <div class="max-w-lg mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">Envie-nos uma mensagem para saber mais sobre nossas experiências ou para reservar sua próxima aventura!</p>
+                    <p class="text-gray-700"><strong>Email:</strong> contato@campoecidade.com</p>
+                    <p class="text-gray-700"><strong>Telefone:</strong> (11) 1234-56*****(</p>
+                    <p class="text-gray-700"><strong>Endereço:</strong> Av. Principal, 123, Centro, PR </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Campo & Cidade. Todos os direitos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="text-green-300 hover:text-green-100 mx-2">Facebook</a>
+                <a href="#" class="text-green-300 hover:text-green-100 mx-2">Instagram</a>
+                <a href="#" class="text-green-300 hover:text-green-100 mx-2">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+```
